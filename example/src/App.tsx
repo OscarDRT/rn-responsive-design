@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { normalize, normalizeHeight } from 'react-native-responsive-design';
+import { normalize, normalizeHeight } from 'rn-responsive-design';
 
 export default function App() {
   return (
