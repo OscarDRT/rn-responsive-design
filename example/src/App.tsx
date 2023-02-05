@@ -1,18 +1,14 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'rn-responsive-design';
+import { normalize, normalizeHeight } from 'react-native-responsive-design';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <View style={styles.box}>
+        <Text>App</Text>
+      </View>
     </View>
   );
 }
@@ -24,8 +20,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
+    backgroundColor: 'red',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: normalizeHeight(20),
+    paddingHorizontal: normalize(20),
   },
 });
