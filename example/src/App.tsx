@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'red',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: normalizeHeight(20),
-    paddingHorizontal: normalize(20),
+    paddingVertical: normalizeHeight(30),
+    paddingHorizontal: normalize(30),
   },
 });
